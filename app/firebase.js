@@ -1,14 +1,15 @@
 import { initializeApp } from "firebase/app";
 import { connectFirestoreEmulator, getFirestore } from "firebase/firestore";
-import { connectFunctionsEmulator, getFunctions } from "firebase/functions";
+import { connectFunctionsEmulator, getFunctions, httpsCallable } from "firebase/functions";
 
 const firebaseConfig = {
-  apiKey: '',
-  authDomain: '',
-  projectId: '',
-  storageBucket: '',
-  messagingSenderId: '',
-  appId: '',
+  apiKey: 'AIzaSyCYbfs6u753XeS5Pwls5QLvWCXJBdrWEYI',
+  authDomain: 'ldn-weather-app.firebaseapp.com',
+  projectId: 'ldn-weather-app',
+  storageBucket: 'ldn-weather-app.appspot.com',
+  messagingSenderId: '48432130792',
+  appId: '1:48432130792:web:be9f947f77624dbc0fb75d',
+  measurementID: 'G-MX377WVY8D',
 }
 
 let db, functions;

@@ -1,24 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Button, TouchableOpacity } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+import { init } from './firebase';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Provider } from 'react-redux';
+import store from './store';
+import HomeScreen from './screens/Home';
+import WeatherScreen from './screens/Weather';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
+    init();
+
     return (
-        <View style={styles.container}>
-            <LinearGradient
-                colors={['#FFFFFF', '#7490F5']}
-                style={styles.background}
-            >
-                <TouchableOpacity
-                    title='Get Weather'
-                    style={styles.button}
-                    onPress={() => console.log('Button Pressed')}
-                    accessibilityLabel='Get current weather in London'
-                >
-                  <Text style={styles.text}>Get Weather</Text>
-                </TouchableOpacity>
-            </LinearGradient>
-        </View>
+        <Provider store={store}>
+            {/* add loading to nav */}
+            <NavigationContainer>
+                <Stack.Navigator>
+                    <Stack.Screen name='Home' component={HomeScreen} />
+                    <Stack.Screen name='Weather' component={WeatherScreen} />
+                </Stack.Navigator>
+            </NavigationContainer>
+        </Provider>
     );
 }
 
@@ -45,8 +49,8 @@ const styles = StyleSheet.create({
         borderRadius: '50%',
     },
     text: {
-      color: '#FFFFFF',
-      fontSize: '20px',
-      fontWeight: '600',
-    }
+        color: '#FFFFFF',
+        fontSize: '20px',
+        fontWeight: '600',
+    },
 });
