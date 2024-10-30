@@ -59,9 +59,7 @@ Look forward to chatting soon otherwise, thanks!
 
 ### UI
 
-![IMG_2938](https://github.com/user-attachments/assets/99c4caf8-88ca-47df-a396-1d80348e23c0)
-
-![IMG_2939](https://github.com/user-attachments/assets/04512f8c-0a7f-41c1-b868-0e5c5804095f)
+![IMG_2938](https://github.com/user-attachments/assets/99c4caf8-88ca-47df-a396-1d80348e23c0)  ![IMG_2939](https://github.com/user-attachments/assets/04512f8c-0a7f-41c1-b868-0e5c5804095f)
 
 
 
