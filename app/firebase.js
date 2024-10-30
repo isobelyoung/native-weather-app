@@ -3,7 +3,7 @@ import { connectFirestoreEmulator, getFirestore } from "firebase/firestore";
 import { connectFunctionsEmulator, getFunctions, httpsCallable } from "firebase/functions";
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCYbfs6u753XeS5Pwls5QLvWCXJBdrWEYI',
+  apiKey: '',
   authDomain: 'ldn-weather-app.firebaseapp.com',
   projectId: 'ldn-weather-app',
   storageBucket: 'ldn-weather-app.appspot.com',
