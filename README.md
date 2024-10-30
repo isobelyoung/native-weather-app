@@ -39,3 +39,22 @@ Show us what you can do.
 - Go to `app/firebase.js` and change the `firebaseConfig` to that of the firebase project you just created. You can find this in the project settings in the Firebase console.
 - To start the app, run `npm install`, `npm run ios` or `npm run android` from the `/app` folder
 - To start the local emulator, run `npm install`, `npm run serve` from the `/functions` folder
+
+
+### From the Dev
+
+Hi, fancy seeing you here!
+
+I've set up the application as per the specifications outlined above, with a few little embellishments - navigation and global state context.
+
+Normally for an app of this size, I acknowledge they would not be necessary but I wanted to try apply a modular approach which meant storing the data fetched from the API somewhere. To avoid prop drilling, I thought it best to use Redux as it's a pattern I'm very familiar with and sets the app for future feature expansion.
+
+I do realise that there are some habits coming through from primarily using TypeScript, and in a perfect world I'd have defined my types and/or interfaces in a better way. The setting of the data in redux is one that currently relies on everything being returned perfectly from the API.
+
+With more time, I would also have ideally done some unit tests (I've used Jest before) and applied the appropriate error handling - but all in all for this task, I have focused on the happy path, and have not done any performance optimisations (eg. there may be some imports that could be removed - but in the interests of time, I'm keen to submit this as is).
+
+Surpisingly, the biggest hurdle came from rendering images dynamically. I hacked a workaround together, but I did get stumped a little bit trying to do that effectively as the require(...) method requires a static input. I also got stuck trying to access the firebase function for a little while, until I realised I was overcomplicating the situation (a classic - thought it was a little funny).
+
+Look forward to chatting soon otherwise, thanks!
+
+
